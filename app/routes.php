@@ -58,7 +58,7 @@ Route::get('logout', array('before' => 'auth', function()
 
 Route::get('register', function()
 {
-	return View::make('users.edit');
+	return View::make('users.create');
 });
 
 Route::post('register', array('before' => 'csrf', function()
